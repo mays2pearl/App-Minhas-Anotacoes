@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8JT-Sd-7ZF">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Minhas Anotações-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MinhasAnotacoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink-gradient-lines-4k-abstract" translatesAutoresizingMaskIntoConstraints="NO" id="ROP-mb-9xg">
+                                <rect key="frame" x="0.0" y="147.66666666666669" width="428" height="744.33333333333326"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJJ-9p-Zqq">
+                                <rect key="frame" x="51" y="456" width="327" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBV-L1-APN">
+                                <rect key="frame" x="51" y="464" width="327" height="45"/>
+                                <color key="tintColor" red="0.801476419" green="0.34264671800000002" blue="0.94369864459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SALVAR" titleAlignment="automatic">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name="Georgia-Bold" family="Georgia" pointSize="27"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="salvarAnotacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzW-ST-WmQ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Digite aqui..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sq2-Xw-sc4">
+                                <rect key="frame" x="94" y="240" width="240" height="216"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SJJ-9p-Zqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="2bP-C8-Cgu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SJJ-9p-Zqq" secondAttribute="trailing" constant="50" id="BBN-xf-NxO"/>
+                            <constraint firstItem="SJJ-9p-Zqq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Erg-Ub-NRY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ROP-mb-9xg" secondAttribute="bottom" id="NYb-pH-u65"/>
+                            <constraint firstItem="kBV-L1-APN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="Vpa-qB-aGT"/>
+                            <constraint firstItem="ROP-mb-9xg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WAO-w3-yRS"/>
+                            <constraint firstItem="Sq2-Xw-sc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Wf5-w7-I6N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kBV-L1-APN" secondAttribute="trailing" constant="50" id="XAK-5v-F1V"/>
+                            <constraint firstItem="kBV-L1-APN" firstAttribute="top" secondItem="Sq2-Xw-sc4" secondAttribute="bottom" constant="8" symbolic="YES" id="a5c-Wk-CYV"/>
+                            <constraint firstItem="Sq2-Xw-sc4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="92.329999999999998" id="fte-Il-h0k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ROP-mb-9xg" secondAttribute="trailing" id="gGD-gu-oz4"/>
+                            <constraint firstItem="ROP-mb-9xg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ilQ-Iq-xHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sq2-Xw-sc4" secondAttribute="trailing" constant="94" id="uqD-r8-rpj"/>
+                            <constraint firstItem="SJJ-9p-Zqq" firstAttribute="top" secondItem="Sq2-Xw-sc4" secondAttribute="bottom" id="xtJ-T1-289"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Minhas Anotações" id="hbK-7s-pUm"/>
+                    <connections>
+                        <outlet property="textoCampo" destination="Sq2-Xw-sc4" id="rra-GI-wCe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.3644859813083" y="78.401727861771064"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="92d-H2-4up">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8JT-Sd-7ZF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="4Vx-l4-7op">
+                        <rect key="frame" x="0.0" y="44" width="428" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.90762454270000004" green="0.84772378209999999" blue="0.98254460099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.37348234650000001" green="0.8179867864" blue="0.97372144459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VFo-tI-dFq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yD-kO-yr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.125" y="78.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pink-gradient-lines-4k-abstract" width="3840" height="2160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
